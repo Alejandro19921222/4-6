@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   end
 
   def index
+    @blogs = Blog.all
   end
 
   def new
